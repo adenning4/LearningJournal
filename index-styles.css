@@ -1,0 +1,92 @@
+/*specific to index*/
+body {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "hero"
+    "blogs"
+    "additional-btn"
+    "footer";
+  grid-template-rows: auto auto auto auto 105px;
+}
+header {
+  grid-area: header;
+}
+.featured-blog {
+  grid-area: hero;
+}
+.blogs {
+  grid-area: blogs;
+}
+.additional-btn {
+  grid-area: additional-btn;
+}
+footer {
+  grid-area: footer;
+}
+
+/* specific to index*/
+.featured-blog {
+  background: #2e2215 url(./images/hero-img.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  justify-content: flex-end;
+  color: #ffffff;
+  text-shadow: 0 0 2px black;
+  min-height: 300px;
+}
+
+/*specific to index*/
+.featured-date,
+.featured-blog-title,
+.featured-blog-summary {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/*specific to index*/
+.featured-blog-title {
+  border-radius: 0 10px 0 0;
+}
+
+.featured-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* specific to index*/
+/* additional content button */
+.additional-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em 0 2em;
+}
+/* specific to index*/
+.additional-btn button {
+  border: none;
+  font-family: inherit;
+  background: none;
+  font-weight: 700;
+  text-decoration: underline;
+  font-size: 1rem;
+}
+/* specific to index*/
+.additional-btn button:hover {
+  cursor: pointer;
+}
+/* specific to index*/
+.additional-btn button:hover,
+.additional-btn button:focus {
+  text-decoration: none;
+}
+
+/* utility */
+/* specific to index*/
+.default-additional-media {
+  display: none;
+}
+/* specific to index*/
+.choice-additional-media {
+  display: none;
+}

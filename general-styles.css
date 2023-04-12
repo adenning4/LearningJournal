@@ -16,19 +16,10 @@ body {
   min-width: 360px;
   max-width: 1300px;
   margin: 0 auto;
-  display: grid;
-  grid-template-areas:
-    "header"
-    "hero"
-    "blogs"
-    "additional-btn"
-    "footer";
-  grid-template-rows: auto auto auto auto 105px;
   background-color: #ffffff;
 }
 
 /* header */
-
 header,
 nav ul {
   display: flex;
@@ -44,7 +35,6 @@ header p {
 }
 
 header {
-  grid-area: header;
   padding: 1.25em;
 }
 
@@ -63,25 +53,10 @@ nav ul li a {
 
 /* hero */
 .featured-blog {
-  grid-area: hero;
-  background: #2e2215 url(./images/hero-img.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position-y: bottom;
   padding: 1.25em;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  color: #ffffff;
-  text-shadow: 0 0 2px black;
-  min-height: 300px;
   margin-bottom: 0.875em;
-}
-
-.featured-date,
-.featured-blog-title,
-.featured-blog-summary {
-  background: rgba(0, 0, 0, 0.7);
 }
 
 .featured-blog-title,
@@ -91,7 +66,6 @@ nav ul li a {
 
 .featured-blog-title {
   font-size: 2rem;
-  border-radius: 0 10px 0 0;
 }
 
 .featured-date {
@@ -104,10 +78,6 @@ nav ul li a {
 }
 
 /* blog */
-
-.blogs {
-  grid-area: blogs;
-}
 
 .blog-tile {
   padding: 1.25em;
@@ -134,33 +104,9 @@ nav ul li a {
   color: #505050;
 }
 
-/* additional content button */
-.additional-btn {
-  grid-area: additional-btn;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0.5em 0 2em;
-}
-.additional-btn button {
-  border: none;
-  font-family: inherit;
-  background: none;
-  font-weight: 700;
-  text-decoration: underline;
-  font-size: 1rem;
-}
-.additional-btn button:hover {
-  cursor: pointer;
-}
-.additional-btn button:hover,
-.additional-btn button:focus {
-  text-decoration: none;
-}
 /* footer */
 
 footer {
-  grid-area: footer;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -177,15 +123,6 @@ footer {
 
 .footer-copyright {
   color: #d7d7d7;
-}
-
-/* utility */
-.default-additional-media {
-  display: none;
-}
-
-.choice-additional-media {
-  display: none;
 }
 
 @media (min-width: 768px) {
