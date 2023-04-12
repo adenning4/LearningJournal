@@ -150,42 +150,7 @@ footer {
   footer {
     font-size: 1rem;
   }
-  .featured-blog {
-    background-position-y: -720px;
-  }
-}
 
-@media (min-width: 1024px) {
-  header p {
-    font-size: 1.25rem;
-  }
-  nav ul li a {
-    font-size: 1rem;
-  }
-  .featured-date,
-  .blog-date {
-    font-size: 1rem;
-  }
-  .featured-blog-title {
-    font-size: 2.5rem;
-  }
-  .featured-blog-summary,
-  .blog-summary {
-    font-size: 1.125rem;
-  }
-
-  .blog-title {
-    font-size: 2rem;
-  }
-  footer {
-    font-size: 1rem;
-  }
-
-  .featured-blog {
-    min-height: 488px;
-    background-position-y: -800px;
-    margin-bottom: 0;
-  }
   .blogs {
     display: grid;
     grid-template: auto / 1fr 1fr 1fr;

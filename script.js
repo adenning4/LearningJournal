@@ -58,7 +58,7 @@ function hideDefaultAdditionalMedia() {
 }
 
 function showDefaultAdditionalMediaOnScreenCheck() {
-  if (window.screen.width >= 1024) {
+  if (window.screen.width >= 768) {
     showDefaultAdditionalMedia();
   } else {
     hideDefaultAdditionalMedia();
@@ -74,9 +74,9 @@ function hideChoiceAdditionalMedia() {
 }
 
 function isScreenBreakPointGrowing() {
-  return screenWidth.currentWidth >= 1024 && screenWidth.lastWidth < 1024;
+  return screenWidth.currentWidth >= 768 && screenWidth.lastWidth < 768;
 }
 
 function isScreenBreakPointShrinking() {
-  return screenWidth.currentWidth < 1024 && screenWidth.lastWidth >= 1024;
+  return screenWidth.currentWidth < 768 && screenWidth.lastWidth >= 768;
 }

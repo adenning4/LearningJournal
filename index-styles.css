@@ -90,3 +90,17 @@ footer {
 .choice-additional-media {
   display: none;
 }
+
+@media (min-width: 768px) {
+  .featured-blog {
+    background-position-y: -530px;
+    min-height: 488px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .featured-blog {
+    background-position-y: -870px;
+  }
+}
