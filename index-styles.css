@@ -50,8 +50,13 @@ footer {
 }
 
 .featured-link {
-  text-decoration: none;
+  text-decoration: underline;
   color: inherit;
+}
+
+.featured-link:hover,
+.featured-link:focus {
+  color: #fcd686;
 }
 
 /* specific to index*/
